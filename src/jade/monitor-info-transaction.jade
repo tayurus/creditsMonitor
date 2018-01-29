@@ -1,0 +1,64 @@
+include ../blocks/head/head.jade
+body
+    include ../blocks/header/header.jade
+    
+    .container.container_maxWidth_100.container_background_gray.container_verticalPadding_45
+        .container
+            .container__title Transaction information 
+            
+    .time-tab
+        .time-tab__intervals
+            .time-tab__interval.time-tab__interval-active(data-infoTitle="1") Overview
+            .time-tab__interval(data-infoTitle="2") Event log
+        .owl-carousel.owl-theme.time-tab__info
+        .info(data-info="1")
+
+            .info__row
+                .info__title TxHash: 		
+                .info__title CS12rf123
+            .info__row
+                .info__title TxReceipt Status: 		
+                .info__title.info__title_width_auto.success Success
+            .info__row
+                .info__title Block Height: 				
+                .info__title.info__title_width_auto 4929141 (88 block confirmations)
+            .info__row
+                .info__title TimeStamp: 				
+                .info__title.info__title_width_auto 22 mins ago (Jan-18-2018 12:35:41 PM +UTC)	
+            .info__row
+                .info__title From: 								
+                .info__title.info__title_width_auto CS12rf123
+            .info__row
+                .info__title To: 		
+                .info__title.info__title_width_auto CS12rf123
+            .info__row
+                .info__title Value: 			
+                .info__title.info__title_width_auto 0.1192
+                
+                
+                
+        .info(data-info="2", hidden)
+            .info__row
+                .info__title TxHash: 		
+                .info__title 42342423
+            .info__row
+                .info__title TxReceipt Status: 		
+                .info__title.info__title_width_auto.failed Failed
+            .info__row
+                .info__title Block Height: 				
+                .info__title.info__title_width_auto 4929141 (88 block confirmations)
+            .info__row
+                .info__title TimeStamp: 				
+                .info__title.info__title_width_auto 22 mins ago (Jan-18-2018 12:35:41 PM +UTC)	
+            .info__row
+                .info__title From: 								
+                .info__title.info__title_width_auto CS12rf123
+            .info__row
+                .info__title To: 		
+                .info__title.info__title_width_auto CS12rf123
+            .info__row
+                .info__title Value: 			
+                .info__title.info__title_width_auto 0.1192
+                        
+
+    include ../blocks/footer/footer.jade 

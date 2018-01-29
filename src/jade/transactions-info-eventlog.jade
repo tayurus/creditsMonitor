@@ -1,0 +1,53 @@
+include ../blocks/head/head.jade
+body
+    include ../blocks/header/header.jade
+    
+    .container.container_maxWidth_100.container_background_gray.container_verticalPadding_45
+        .container
+            .container__title Transaction information 
+            
+            .time-tab
+                .time-tab__intervals
+                    .time-tab__interval.time-tab__interval-active(data-infoTitle="1") Overview
+                    .time-tab__interval(data-infoTitle="2") Event log
+                .owl-carousel.owl-theme.time-tab__info
+                .info(data-info="1")
+
+                    .info__row
+                        .info__title.info__title_width_100 Transaction Receipt Event Logs : 		
+                    .info__row
+                        .info__title Address: 		
+                        .info__title.info__title_width_auto CSac37952677363650e99fb6b9324784d930d88a41  
+                    .info__row 
+                        .info__title Topics:
+                        .info__column 				
+                            .info__title.info__title_width_auto CSb9691eb0e3c0b237fc7e920772da273eb161e59559cda25b73f8028c1084cbf2
+                            .info__title.info__title_width_auto CS0000000000000000000000002e05a304d3040f1399c8c20d2a9f659ae7521058
+                    .info__row
+                        .info__title Data: 				
+                    .info__row
+                        .info__title Hex 		 									
+                        .info__title.info__title_width_auto 000000000000000000000000ac37952677363650e99fb6b9324784d930d88a41	
+        
+                        
+                        
+                        
+                .info(data-info="2", hidden)
+
+                    .info__row
+                        .info__title.info__title_width_100 Transaction Receipt Event Logs : 		
+                    .info__row
+                        .info__title Address: 		
+                        .info__title.info__title_width_auto fwefwef 234t4t4g4
+                    .info__row 
+                        .info__title Topics:
+                        .info__column 				
+                            .info__title.info__title_width_auto CSb9691eb0e3c0b237fc7e920772da273eb161e59559cda25b73f8028c1084cbf2
+                    .info__row
+                        .info__title Data: 				
+                    .info__row
+                        .info__title Hex 		 									
+                        .info__title.info__title_width_auto 000000000000000000000000ac37952677363650e99fb6b9324784d930d88a41	
+                        
+
+    include ../blocks/footer/footer.jade 

@@ -1,0 +1,14 @@
+header.header
+    .header__wrapper
+        .header__logo
+            span.header__name CREDITS
+            span.header__wallet.header__name-red Monitor
+        .header__menu
+            a.header__item.header__item-active(href='#') new wallet
+            a.header__item(href='#') monitor
+            a.header__item(href='#') contracts
+        select.header__lang
+            option(value='en') EN
+            option(value='ru') RU
+    form(action='', method='post')
+        input.header__search(type='text', name='search', placeholder='Search')

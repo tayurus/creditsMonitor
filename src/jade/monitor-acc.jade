@@ -1,0 +1,65 @@
+include ../blocks/head/head.jade
+body
+    include ../blocks/header/header.jade
+    
+    .container.container_maxWidth_100.container_background_gray.container_verticalPadding_45
+        .container
+            .container__title Account 
+                span CS234s234df4fr34fr234fv24fr
+    
+    .time-tab
+        .time-tab__intervals
+            .time-tab__interval.time-tab__interval-active(data-infoTitle="1") Information
+            .time-tab__interval(data-infoTitle="2") About
+        .owl-carousel.owl-theme.time-tab__info
+        .info(data-info="1")
+            .info__row
+                .info__img
+                .info__name Name: 	 
+                    span CreditsPREICOinfo
+            .info__row
+                .info__title CS Balance: 	
+                .info__title 1,500.1254 Credits
+            .info__row
+                .info__title Contract creator:		
+                .info__title.info__title_width_auto 0xab7c74abC0C4d48d1bdad5DCB26153FC8780f83E
+        .info(data-info="2", hidden)
+            .info__row
+                .info__img
+                .info__name Name: 	
+                    span Test
+            .info__row
+                .info__title CS Balance: 	
+                .info__title 11111111 Credits
+            .info__row
+                .info__title Contract creator:		
+                .info__title.info__title_width_auto 111111111111111111
+    
+    .last-block
+        h2.last-block__title Last transactions
+        .last-block__number № of transactions
+        .last-block__txns 5 txns
+        .last-block__table-wrapper
+            include ../blocks/pagination/pagination.jade
+            table.last-block__table
+                tr
+                    th №
+                    th Age
+                    th Status
+                    th LedgHash
+                    th From account
+                    th To account
+                    th Value
+                    th Fee
+                tr
+                td 1
+                td 1h 30m
+                td.success Success
+                td CS12rf123
+                td CS12rf123
+                td CS12rf123
+                td 100 CS
+                td 0.001
+        a.last-block__seeAll(href="#") See all transactions
+    
+    include ../blocks/footer/footer.jade 

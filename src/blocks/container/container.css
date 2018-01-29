@@ -1,0 +1,25 @@
+.container{
+    max-width: 1150px;
+    margin: auto;
+}
+
+.container_maxWidth_100{
+    max-width: 100%;
+}
+
+.container_background_gray{
+    background-color: #ececec;
+}
+
+.container_verticalPadding_45{
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.container__title{
+    font-family: "Montserrat - Semi Bold";
+    font-size: 28px;
+    font-weight: bold;
+    word-break: break-all;
+    padding: 15px;
+}

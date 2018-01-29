@@ -1,0 +1,33 @@
+include ../blocks/head/head.jade
+body
+    include ../blocks/header/header.jade
+    include ../blocks/time-tab/time-tab.jade
+    include ../blocks/block/block.jade
+
+    .last-block
+        h2.last-block__title Last transactions
+        .last-block__number № of transactions
+        .last-block__txns 5 txns
+        .last-block__table-wrapper
+            table.last-block__table
+                tr
+                    th №
+                    th Age
+                    th Status
+                    th LedgHash
+                    th From account
+                    th To account
+                    th Value
+                    th Fee
+                tr
+                td 1
+                td 1h 30m
+                td.success Success
+                td CS12rf123
+                td CS12rf123
+                td CS12rf123
+                td 100 CS
+                td 0.001
+        a.last-block__seeAll(href="#") See all transactions
+
+    include ../blocks/footer/footer.jade
